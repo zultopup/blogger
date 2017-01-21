@@ -1,0 +1,23 @@
+Blogger Template Style
+Name:     Blogger Store v2.0
+Designer: Rifki Aria Gumelar
+URL:      www.javatemplates.com
+
+Bandung, 01 October 2011
+This template was designed and built by Java Templates for free distribution.
+Blogger Store v2.0 by Rifki Aria Gumelar is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+* http://creativecommons.org/licenses/by-nc-sa/3.0/ *
+
+All work is the property of Java Templates and the respective owners.
+
+Credits :
+SimpleCart.js by The Wojo Group (thewojogroup.com -simplecartjs.com)
+Superfish by Joel Birch
+jQuery Cookie Plugin by Klaus Hartl (stilbuero.de)
+Carousel Fred by Fred Heusschen (caroufredsel.frebsite.nl)
+
+Copyright 2011 Java Templates. All Rights Reserved.
+
+Get the Original template here : http://javatemplates.com/2011/blogger-store-v2
+
+Instructions : http://javatemplates.com/blog/installing-and-customize-blogger-store-v2

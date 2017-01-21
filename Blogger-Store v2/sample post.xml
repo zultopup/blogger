@@ -1,0 +1,2095 @@
+<?xml version='1.0' encoding='UTF-8'?><?xml-stylesheet href="http://www.blogger.com/styles/atom.css" type="text/css"?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:georss='http://www.georss.org/georss' xmlns:gd='http://schemas.google.com/g/2005' xmlns:thr='http://purl.org/syndication/thread/1.0'><id>tag:blogger.com,1999:blog-4103122636629225580.archive</id><updated>2011-10-01T10:46:49.565-07:00</updated><title type='text'>Blogger Store</title><link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://blogger-store-v2.blogspot.com/feeds/archive'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/archive'/><link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/archive'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>noreply@blogger.com</email></author><generator version='7.00' uri='http://www.blogger.com'>Blogger</generator><entry><id>tag:blogger.com,1999:blog-4103122636629225580.layout</id><published>2011-09-28T03:10:14.941-07:00</published><updated>2011-10-01T10:46:49.565-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#template'/><title type='text'>Template: Blogger Store</title><content type='text'>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'&gt;
+&lt;head&gt;
+&lt;b:if cond='data:blog.isMobile'&gt;
+&lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/&gt;
+&lt;b:else/&gt;
+&lt;meta content='width=1100' name='viewport'/&gt;
+&lt;/b:if&gt;
+&lt;b:include data='blog' name='all-head-content'/&gt;
+&lt;title&gt;&lt;data:blog.pageTitle/&gt;&lt;/title&gt;
+
+&lt;link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'/&gt;
+
+&lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js' type='text/javascript'/&gt;
+&lt;script src='https://jt-scriptsource.googlecode.com/svn/trunk/jquery.cookie.js' type='text/javascript'/&gt;
+&lt;script src='https://jt-scriptsource.googlecode.com/svn/trunk/superfish.js' type='text/javascript'/&gt;
+&lt;script src='https://jt-scriptsource.googlecode.com/svn/trunk/jquery.carouFredSel-4.5.2.js' type='text/javascript'/&gt;
+&lt;script src='https://jt-scriptsource.googlecode.com/svn/trunk/function.featured_product.min.js' type='text/javascript'/&gt;
+&lt;script src='https://jt-scriptsource.googlecode.com/svn/trunk/simplecart.js' type='text/javascript'/&gt;
+
+
+&lt;script type='text/javascript'&gt;
+//&lt;![CDATA[
+/* SIMPLE CART SETTING
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;*/
+simpleCart.email = 'rifkiblogger@gmail.com';
+simpleCart.checkoutTo = PayPal;
+simpleCart.currency = USD;
+simpleCart.cartHeaders = ['name','thumb_image','Quantity_input','increment',  'decrement','Total'];
+//]]&gt;
+&lt;/script&gt;
+
+&lt;b:skin&gt;&lt;![CDATA[/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Blogger Store v2.0
+Designer: Rifki Aria Gumelar
+URL:      www.javatemplates.com
+
+Bandung, 01 October 2011
+This template was designed and built by Java Templates for free distribution.
+Blogger Store v2.0 by Rifki Aria Gumelar is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+* http://creativecommons.org/licenses/by-nc-sa/3.0/ *
+
+All work is the property of Java Templates and the respective owners.
+
+Credits :
+Framework jQuery.com
+SimpleCart.js by The Wojo Group (thewojogroup.com -simplecartjs.com)
+Superfish by Joel Birch
+jQuery Cookie Plugin by Klaus Hartl (stilbuero.de)
+Carousel Fred by Fred Heusschen (caroufredsel.frebsite.nl)
+
+Copyright 2011 Java Templates. All Rights Reserved.
+----------------------------------------------- */
+/* VARIABLE DEFINITIONS
+This Template support for advanced template editor, you can set background color, text and link color etc via Blogger Template Designer.
+-----------------------------------------------------------
+// Background Color Setting
+&lt;Group description="Backgrounds" selector=".body"&gt;
+&lt;Variable name="body.background.color" description="Body Background Color" type="color" default="#ffffff" value="#ffffff"/&gt;
+&lt;/Group&gt;
+
+// Blog Description Color Setting
+&lt;Group description="Blog Description" selector=".header .description"&gt;
+&lt;Variable name="description.text.color" description="Description Color" type="color"
+default="#565656"  value="#676767"/&gt;
+&lt;/Group&gt;
+
+// Link Color Setting
+&lt;Group description="Links" selector=".main-outer"&gt;
+&lt;Variable name="link.color" description="Link Color" type="color" default="#4781a4" value="#4781a4"/&gt;
+&lt;Variable name="link.hover.color" description="Hover Color" type="color" default="#000000" value="#000000"/&gt;
+&lt;/Group&gt;
+
+// Background Menu Setting
+&lt;Variable name="menu.background.color" description="Menu Background" type="color" default="#de360f" value="#de360f"/&gt;
+
+// Background Shopping Cart Setting
+&lt;Variable name="cart.background.color" description="Shopping Cart Background" type="color" default="#ffcc00" value="#ffcc00"/&gt;
+&lt;Variable name="cart.border.color" description="Shopping Cart Border" type="color" default="#ff9900" value="#ff9900"/&gt;
+*/
+
+/* CSS RESET : http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* SET TO HIDE
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;*/
+#navbar,.date-header,.post-footer,.feed-links {display:none;}
+
+/* GLOBAL STYLE
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;*/
+
+/* Body */
+body {
+background:$(body.background.color);
+background-image:url(https://lh6.googleusercontent.com/-ZJX9YzJQvYQ/ToUuCTAfbfI/AAAAAAAAACE/L0aJ7oRcqOw/h1600/body-pattern-1.png);
+color:#656565;
+font-family:Tahoma,Verdana,sans-serif;
+font-size:12px;
+line-height:20px;
+margin:0;
+padding:0;
+}
+
+/* Link */
+a{color:$(link.color);;text-decoration:none;}
+a:hover{color:$(link.hover.color);text-decoration:none;}
+
+/* Heading */
+h1,h2,h3,h4{font-weight:700;font-family:'Open Sans', Tahoma, sans-serif;}
+h1{font-size:24px;}
+h2{font-size:16px;}
+h3{font-size:20px;}
+h4{font-size:16px;}
+
+/* Aligment */
+.left{float:left;}
+.right{float:right;}
+
+/* Cleaner */
+.clearfix:after{clear:both;content:"";display:block;font-size:0;height:0;visibility:hidden;}
+.clear{clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;margin:0;padding:0;}
+
+/* Status Message */
+.status-msg-wrap {
+background:#fbfbfb;
+border:5px solid #ddd;
+font-size:14px;
+text-shadow:1px 1px 1px #fff;
+-webkit-border-radius:5px 5px 5px 5px;
+-moz-border-radius:5px;
+-khtml-border-radius:5px 5px 5px 5px;
+border-radius:5px 5px 5px 5px;
+padding:5px;
+}
+.status-msg-border,.status-msg-bg {
+border:none;
+background:transparent;
+}
+
+/* Blog Pager */
+#blog-pager {
+position:relative;
+top:10px;
+background:#f3f3f3 url(http://2.bp.blogspot.com/-S4AKqSDPUEs/ToSYCWJy4qI/AAAAAAAAABI/conBgqSajOY/s1600/fade.png) repeat-x top left;
+width:636px;
+border:1px solid #ddd;
+clear:both;
+font-family:'Open Sans', Tahoma, sans-serif;
+font-weight:700;
+color:#000;
+font-size:13px;
+border-radius:4px;
+margin:15px 0;
+padding:5px 10px;
+}
+
+/* MAIN LAYOUT
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;*/
+
+/* Container */
+#container{
+position:relative;
+text-align:left;
+width:960px;
+clear:both;
+margin:0 auto;
+background:url(https://lh5.googleusercontent.com/-o3DTpFffrHI/ToUZNoEdRZI/AAAAAAAAAB4/rEq7jJy21MA/h1600/container-bg.png);
+border-left:1px solid #ccc;
+border-right:1px solid #ccc;
+-moz-box-shadow:0 0 6px #ccc;
+-webkit-box-shadow:0 0 6px #ccc;
+-khtml-box-shadow:0 0 6px #ccc;
+box-shadow:0 0 6px #ccc
+}
+
+/* Header Bar Menu */
+#top-bar {
+background:#fbfbfb url(https://lh5.googleusercontent.com/-JB-WwLJFHpI/TobUd5T_HVI/AAAAAAAAADY/dBCCBpdgvHA/h1600/divider.gif)repeat-x bottom left;
+padding:10px 20px 0 20px;
+height:35px;
+}
+#top-bar-right {
+float:right;
+width:400px
+}
+
+/* Header */
+#header-wrapper {
+position:relative;
+clear:both;
+border-bottom:1px solid #ddd;
+padding:20px;
+height:auto;
+}
+
+/* Menu Container */
+#menu-wrapper {
+float:left;
+width:100%;
+background-color:$(menu.background.color);
+height:46px;
+-webkit-border-radius:5px 5px 5px 5px;
+-moz-border-radius:5px;
+-khtml-border-radius:5px 5px 5px 5px;
+border-radius:5px 5px 5px 5px;
+-webkit-box-shadow:0 2px 2px #DDD;
+-moz-box-shadow:0 2px 2px #DDD;
+box-shadow:0 2px 2px #DDD;
+clear:both;
+margin:25px 0 5px 0;
+}
+
+/* Content */
+#main-content {
+background:#fbfbfb url(https://lh6.googleusercontent.com/-lbuZ3YmUzCE/ToUcGPt8wKI/AAAAAAAAACA/c5XSguyAcjs/h1600/content-light.png) no-repeat top center;
+width:920px;
+clear:both;
+border-top:1px solid #fff;
+border-bottom:1px solid #fff;
+padding:20px;
+}
+#main-content .content-left {
+width:660px;
+float:left;
+}
+#main-content .content-right {
+width:250px;
+float:right;
+}
+#main,#sidebar {
+margin:0;
+padding:0;
+}
+
+/* Footer */
+#footer {
+border-top:1px solid #ddd;
+padding:10px 20px;
+}
+
+/* HEADER CONTENT
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;*/
+
+/* Logo */
+#header-wrapper .header {
+margin:10px 0 0 0;
+width:400px;
+height:60px;
+overflow:hidden;
+float:left;
+}
+.description {
+position:relative;
+font-size:11px;
+color:$(description.text.color);
+text-transform:uppercase;
+top:-25px;
+left:76px;
+}
+
+/* Header Right Element */
+#header-wrapper .header-right-element {
+float:right;
+width:468px;
+margin:0;
+}
+.ads-half-banner{
+float:right;
+width:468px;
+height:60px;
+background:#fff;
+border:1px solid #ddd;
+margin:0;
+padding:3px;
+}
+
+/* Top Menu */
+ul#top-nav{
+list-style-type:none;
+position:relative;
+z-index:5;
+margin:0;
+padding:0
+}
+ul#top-nav li{
+position:relative;
+display:inline;
+float:left;
+color:#676767;
+margin-top:2px
+}
+ul#top-nav li a{
+display:block;
+color:#666;
+font-family:'Open Sans', Tahoma, sans-serif;
+font-weight:bold;
+text-shadow:1px 1px 1px #fff;
+background:url(http://4.bp.blogspot.com/-_M9E8udu8Cg/ToXzkLNMB9I/AAAAAAAAAC8/4R27ZmKUChc/s1600/top-menu-sep.gif) no-repeat 0 6px;
+padding:0 10px 12px
+}
+ul#top-nav li:first-child a {background:transparent}
+* html ul#top-nav li a {display:inline-block}
+ul#top-nav li a:link,#myslidemenu ul li a:visited {color:#6666}
+ul#top-nav li a:hover {
+color:#000;
+text-decoration:none
+}
+ul#top-nav li ul {
+background:#fbfbfb;
+border:1px solid #ddd;
+border-top:none;
+position:absolute;
+left:0;
+display:block;
+visibility:hidden;
+font-size:11px;
+-moz-border-radius-topleft:0;
+-moz-border-radius-topright:0;
+-moz-border-radius-bottomright:5px;
+-moz-border-radius-bottomleft:5px;
+-webkit-border-radius:0 0 5px 5px;
+border-radius:0 0 5px 5px;
+-webkit-box-shadow:inset 0 1px 5px 0 #eee;
+-moz-box-shadow:inset 0 1px 5px 0 #eee;
+box-shadow:inset 0 1px 5px 0 #eee;
+padding:5px 10px 10px 10px
+}
+ul#top-nav li ul li {
+display:list-item;
+float:none;
+margin:0;
+padding:0
+}
+ul#top-nav li ul li ul {
+top:0;
+margin-left:10px;
+-webkit-box-shadow:-1px 0 4px 0 #000;
+-moz-box-shadow:-1px 0 4px 0 #000;
+box-shadow:-1px 0 4px 0 #000;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px
+}
+ul#top-nav li ul li a{
+width:120px;
+background:transparent;
+border-top:1px solid #ffffff;
+border-bottom:1px solid #ddd;
+margin:0;
+padding:5px 0
+}
+ul#top-nav li ul li:first-child a{border-top:0}
+ul#top-nav li ul li:last-child a{border-bottom:0}
+
+/* Search */
+#topsearch{float:right;margin-top:-2px}
+#topsearch
+input{background:#fff;border:1px solid #ddd;width:110px;height:22px;border-radius:3px;color:#999;padding-right:50px;padding-left:10px;padding-top:2px;position:relative;left:30px;font-size:11px}
+#topsearch
+input.searchsubmit{background:url(http://2.bp.blogspot.com/-W6f2CAgi8Fw/ToXzjqBaTPI/AAAAAAAAAC4/J6juuH43DNk/s1600/search-icon.png) no-repeat center;border:none;width:30px;text-indent:-3000px;position:relative;left:-10px;padding:0}
+#topsearch input.searchsubmit:hover{cursor:pointer}
+
+/* Social Menu */
+#top_social{float:right;margin-right:-10px}
+#top_social
+li{display:inline}
+#top_social a
+span{visibility:hidden}
+#top_social a:hover{text-decoration:none}
+.social_facebook a,.social_twitter a,.social_linkedin a,.social_myspace a,.social_rss
+a{background:url(https://lh3.googleusercontent.com/-NZGrpcYs_Oc/ToXIKI-xxAI/AAAAAAAAACk/1UofgHY8Gao/h1600/social_facebook.png) no-repeat;height:27px;width:24px;display:inline-block;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);filter:alpha(opacity=60);-moz-opacity:0.6;-khtml-opacity:0.6;opacity:0.6}
+.social_twitter
+a{background-image:url(https://lh5.googleusercontent.com/-yzPkavmO4go/ToXIbtpphNI/AAAAAAAAACo/HQhzhHTyFxE/h1600/social_twitter.png)}
+.social_linkedin
+a{background-image:url(https://lh6.googleusercontent.com/-35dzQ78yuMM/ToXJlK24cwI/AAAAAAAAACs/UN-ll0fi4-A/h1600/social_linkedin.png)}
+.social_myspace
+a{background-image:url(https://lh5.googleusercontent.com/-FGVP7bWIWi0/ToXJlgoZ2WI/AAAAAAAAACw/RPl6UDdPZ1A/h1600/social_myspace.png)}
+.social_rss
+a{background-image:url(https://lh3.googleusercontent.com/-Cz_04OoU7sQ/ToXJmaZUmpI/AAAAAAAAAC0/OitRL3p2jNI/h1600/social_rss.png)}
+
+/* Dropdown Menu */
+.nav {
+width:600px;
+float:left;
+}
+.nav ul {
+background-position:bottom;
+background-repeat:no-repeat;
+position:absolute;
+top:-999em;
+z-index:10;
+}
+.nav li {
+background:url(https://lh6.googleusercontent.com/-oY1CHuQsNVk/ToUbTzYpLVI/AAAAAAAAAB8/fHiEaUahl5Q/h1600/menu-separator.png) no-repeat scroll right center transparent;
+float:left;
+position:relative;
+z-index:20;
+}
+.nav a {
+display:block;
+font-size:13px;
+font-family:'Open Sans', Tahoma, sans-serif;
+font-weight:700;
+line-height:14px;
+position:relative;
+text-decoration:none;
+color:#fff;
+z-index:6;
+padding:16px 15px 16px 14px;
+}
+.nav a:hover,.nav a.current {
+color:#fc0;
+}
+.nav li:hover ul,ul.nav li.sfHover ul {
+left:0;
+top:45px;
+background:#de360f;
+}
+.nav li li:hover ul,ul.nav li li.sfHover ul {
+left:203px;
+top:0;
+}
+.nav li li {
+display:block;
+float:left;
+height:auto!important;
+padding:0;
+}
+.nav li ul {
+width:180px;
+-webkit-border-radius:0 0 5px 5px;
+-moz-border-radius:0 0 5px 5px;
+-khtml-border-radius:0 0 5px 5px;
+border-radius:0 0 5px 5px;
+-webkit-box-shadow:0 2px 2px #DDD;
+-moz-box-shadow:0 2px 2px #DDD;
+box-shadow:0 2px 2px #DDD;
+padding-bottom:15px;
+}
+.nav li ul li {
+width:180px;
+background-image:none;
+padding:10px 15px;
+}
+.nav li ul li a {
+padding:0;
+}
+.nav li li a:link,.nav li li a:visited {
+display:block;
+float:left;
+height:auto;
+}
+.nav li:hover {
+visibility:inherit;
+}
+.nav li:hover li ul,.nav li.sfHover li ul,.nav li:hover ul,.nav li li:hover ul {
+top:-999em;
+}
+
+/* LEFT CONTENT
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;*/
+
+/* Switch View */
+.display {
+height:23px;
+border-radius:4px;
+background:#f3f3f3 url(http://2.bp.blogspot.com/-S4AKqSDPUEs/ToSYCWJy4qI/AAAAAAAAABI/conBgqSajOY/s1600/fade.png) repeat-x top left;
+border:1px solid #ddd;
+width:636px;
+margin:0 0 -15px;
+padding:8px;
+}
+.display a {
+background:#fff;
+border:1px solid #ddd;
+border-radius:3px;
+font-size:11px;
+padding:3px 8px 3px 25px;
+}
+a.grid_view {
+background:url(http://3.bp.blogspot.com/-923-HRc47ig/ToSYDD3ZxaI/AAAAAAAAABU/VeOohILNmg0/s1600/grid_view.png) no-repeat 3px center;
+}
+a.list_view {
+background:url(http://3.bp.blogspot.com/-OC0I91VOWlk/ToSYAwQxJYI/AAAAAAAAABA/eVtj5Rh8UK8/s1600/display_large.png) no-repeat 3px center;
+}
+.display a.active {
+background-color:#ededed;
+border:1px solid #ccc;
+color:#111;
+cursor:default;
+}
+
+/* Post Section */
+.post h3 {
+font-size:24px;
+margin-bottom:15px;
+}
+.post {
+width:622px;
+background:url(https://lh5.googleusercontent.com/-o3DTpFffrHI/ToUZNoEdRZI/AAAAAAAAAB4/rEq7jJy21MA/h1600/container-bg.png);
+border:1px solid #ddd;
+border-radius:2px;
+float:left;
+margin:0 0 15px;
+padding:15px;
+}
+.post-body{padding-bottom:40px}
+
+/* Comment Section */
+#comments {
+width:621px;
+float:left;
+border:1px solid #ddd;
+margin:0 0 10px;
+padding:15px;
+}
+#comments h4 {
+font-size:18px;
+margin-bottom:10px;
+}
+#comment-header {
+background:#fff;
+border:1px solid #ededed;
+border-top:1px solid #ddd;
+border-left:1px solid #ddd;
+margin-bottom:10px;
+line-height:16px;
+padding:15px 15px 15px 80px;
+}
+#comment-body {
+line-height:16px;
+margin-top:-10px;
+}
+#comment-date {
+margin-bottom:-20px;
+padding:0;
+}
+.avatar-image-container {
+background:#fff;
+border:1px solid #ddd;
+width:42px;
+height:42px;
+float:left;
+margin-left:-63px;
+padding:5px;
+}
+.avatar-image-container img {
+width:42px;
+height:42px;
+}
+.comments-autor-name {
+font-size:13px;
+font-weight:700;
+}
+.comment-timestamp {
+font-size:9px;
+}
+#comments .comment-author {
+padding-left:0;
+}
+.comment-body {
+margin:0;
+}
+
+/* RIGHT CONTENT
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;*/
+
+/* Sidebar Heading */
+#sidebar h2 {
+background:#f3f3f3 url(http://2.bp.blogspot.com/-S4AKqSDPUEs/ToSYCWJy4qI/AAAAAAAAABI/conBgqSajOY/s1600/fade.png) repeat-x top left;
+border-bottom:none;
+border:1px solid #ddd;
+border-radius:2px 2px 0 0;
+color:#878787;
+text-shadow:1px 1px 1px #fff;
+font-weight:700;
+font-size:14px;
+padding:5px 15px;
+}
+
+/* Sidebar Widget */
+#sidebar .widget {
+margin:0 0 10px;
+padding:0;
+}
+#sidebar .widget-content {
+background:#fff url(http://4.bp.blogspot.com/-i1DxbZx-CLA/ToSeO_R8tiI/AAAAAAAAABw/-wUayiAFmyQ/s1600/header-shadow.png) repeat-x top;
+border:1px solid #ddd;
+border-top:none;
+border-radius:0 0 2px 2px;
+padding:10px 10px 15px;
+}
+#sidebar .widget-content ul li a {
+background:url(https://lh6.googleusercontent.com/-s8EhHMoRqD0/TobU2hRxTGI/AAAAAAAAADc/rgymIhYUpGE/h1600/bullet_red.png) no-repeat 0 0;
+padding-left:18px;
+color:#878787;
+font-weight:700;
+font-size:12px;
+}
+
+/* FOOTER CONTENT
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;*/
+
+/* Copyright */
+#footer .copyright {
+font-family:'Open Sans', Tahoma, sans-serif;
+float:left;
+width:600px;
+color:#484848;
+font-size:15px;
+font-weight:700;
+}
+
+/* Credits */
+#footer p.credits {
+font-size:10px;
+font-weight:400;
+text-transform:uppercase;
+}
+.footer-right{float:right;}
+.footer-right a{
+display:block;
+float:left;
+text-indent:-9999px;
+height:40px;
+margin-left:10px;
+}
+.footer-right a.googlecheck{
+background:url(https://lh6.googleusercontent.com/-uyQJwChzDio/ToY5Xj8xOjI/AAAAAAAAADU/ilZF7M5u1Lk/h80/support.png)no-repeat 0 -43px; width:85px;
+}
+.footer-right a.googlecheck:hover{
+background-position:0 2.25pt;
+}
+.footer-right a.paypal{
+background:url(https://lh6.googleusercontent.com/-uyQJwChzDio/ToY5Xj8xOjI/AAAAAAAAADU/ilZF7M5u1Lk/h80/support.png)no-repeat -85px -42px; width:75px;
+}
+.footer-right a.paypal:hover{
+background-position:-85px 2px;
+}
+
+
+/* SHOPPING CART STYLING
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;*/
+
+/* Shopping Cart Setting for Single Post item */
+.item_price {
+font-size:15px;
+background:#de360f;
+color:#fff;
+font-weight:700;
+position:relative;
+padding:5px 10px;
+}
+.item_image {
+width:150px;
+height:160px;
+background:#fff;
+border:1px solid #ddd;
+float:left;
+text-align:left;
+margin:0 15px 10px 0;
+padding:15px;
+}
+.item_image img {
+width:150px;
+height:150px;
+}
+.item_add {
+position:absolute;
+bottom:0;
+z-index:20;
+right:0;
+background:#8bbd13 url(http://2.bp.blogspot.com/-S4AKqSDPUEs/ToSYCWJy4qI/AAAAAAAAABI/conBgqSajOY/s1600/fade.png) repeat-x top left;
+color:#fff;
+text-shadow:1px 1px 1px #7aa514;
+font-size:14px;
+text-transform:uppercase;
+font-weight:700;
+border-radius:4px 0 0 0;
+border:1px solid #7aa514;
+padding:8px 10px;
+}
+
+/* Shopping Cart Box */
+#menu-wrapper .menu-cart {
+position:relative;
+top:-5px;
+border-radius:4px;
+float:right;
+margin-right:10px;
+height:30px;
+display:block;
+line-height:16px;
+background:$(cart.background.color) url(https://lh3.googleusercontent.com/-dUX23H-zKxs/ToTuES-9aaI/AAAAAAAAAB0/28AzfxgjNlI/h80/basket.png) no-repeat 8px center;
+border:1px solid $(cart.border.color);;
+color:#111;
+padding:12px 12px 12px 45px;
+}
+.menu-cart a.mycart {
+font-size:16px;
+display:block;
+font-weight:700;
+font-family:'Open Sans', Tahoma, sans-serif;
+color:#111;
+margin:0;
+}
+.menu-cart span {
+color:red;
+}
+.menu-cart .bag {
+display:none;
+position:absolute;
+top:50px;
+z-index:2;
+right:-1px;
+background:$(cart.background.color);
+border:1px solid $(cart.border.color);
+border-top:none;
+border-radius:0 0 6px 6px;
+width:415px;
+height:auto;
+padding:15px 0 15px 15px;
+}
+.bag .cart_btn {
+clear:both;
+}
+.bag .cartHeaders {
+display:none;
+}
+.bag .itemContainer {
+border-radius:4px;
+float:left;
+width:73px;
+height:130px;
+background:#fff;
+text-align:center;
+border:1px solid #c77f18;
+margin:0 10px 10px 0;
+padding:8px;
+}
+.bag .itemname a {
+font:bold 10px Helvetica,Arial,sans-serif;
+color:#000;
+letter-spacing:-1px;
+text-transform:uppercase;
+}
+.bag .itemthumb img {
+width:40px;
+height:40px;
+margin:10px 0 0;
+}
+.bag .itemQuantity {
+float:left;
+clear:both;
+display:inline;
+margin:5px 0 5px 5px;
+}
+.bag .item_price {
+clear:both;
+margin-top:5px;
+display:inline;
+}
+.bag .itemQuantity input {
+width:35px;
+height:18px;
+background:#fbfbfb;
+border:1px solid #ddd;
+border-top:1px solid #ccc;
+border-left:1px solid #ccc;
+border-radius:3px;
+text-align:center;
+color:#999;
+font:bold 11px Arial,sans-serif;
+vertical-align:top;
+margin:0 5px 0 0;
+padding:3px 9px 0;
+}
+.bag .itemQuantity input:focus {
+outline:none;
+}
+.bag .itemincrement a {
+display:block;
+background:url(http://4.bp.blogspot.com/-QpABnAsNhUY/TodKbFss-sI/AAAAAAAAADo/3EJvknHqkrI/s1600/arrow.png) -2px -3px;
+width:7px;
+height:5px;
+text-indent:-9999px;
+overflow:hidden;
+margin:10px 0 0;
+}
+.bag .itemdecrement a {
+display:block;
+background:url(http://4.bp.blogspot.com/-QpABnAsNhUY/TodKbFss-sI/AAAAAAAAADo/3EJvknHqkrI/s1600/arrow.png) -2px -10px;
+width:7px;
+height:5px;
+text-indent:-9999px;
+overflow:hidden;
+margin:3px 0 0;
+}
+.bag a.simpleCart_empty,.bag a.simpleCart_checkout {
+background:url(http://2.bp.blogspot.com/-S4AKqSDPUEs/ToSYCWJy4qI/AAAAAAAAABI/conBgqSajOY/s1600/fade.png) repeat-x top left;
+color:#fff;
+font-size:10px;
+text-transform:uppercase;
+font-weight:700;
+border-radius:3px;
+margin-right:10px;
+padding:3px 8px;
+}
+.bag a.simpleCart_empty:hover,.bag a.simpleCart_checkout:hover {
+background-image:url(https://lh4.googleusercontent.com/-BkiT0OfyvOY/TobVG-aSgYI/AAAAAAAAADg/RemBk-D5CGk/h1600/fade-hover.png);
+}
+.bag a.simpleCart_empty {
+background-color:#ef9007;
+border:1px solid #c77f18;
+}
+.bag a.simpleCart_checkout {
+background-color:#8bbd13;
+border:1px solid #7aa514;
+}
+
+/* FEATURED CONTENT
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;*/
+#featured-product{
+}
+.image_carousel {
+position:relative;
+clear:both;
+background:url(https://lh5.googleusercontent.com/-JB-WwLJFHpI/TobUd5T_HVI/AAAAAAAAADY/dBCCBpdgvHA/h1600/divider.gif)repeat-x bottom left;
+margin-bottom:20px;
+padding:15px 15px 10px 28px
+}
+.image_carousel img {
+width:110px;
+height:110px;
+border:1px solid #ccc;
+background-color:#FFF;
+display:block;
+float:left;
+margin:7px;
+padding:9px
+}
+a.prev,a.next {
+background:url(https://lh3.googleusercontent.com/-TrxqwBfKJuY/TobVyLwwySI/AAAAAAAAADk/bcR8HsruEeY/h1600/carousel_sprite.png) no-repeat transparent;
+width:45px;
+height:50px;
+display:block;
+position:absolute;
+top:65px
+}
+a.prev {
+left:-15px;
+background-position:0 0
+}
+a.prev:hover {
+background-position:0 -50px
+}
+a.next {
+right:-15px;
+background-position:-50px 0
+}
+a.next:hover {
+background-position:-50px -50px
+}
+.pagination {
+text-align:center
+}
+.pagination a {
+background:url(https://lh3.googleusercontent.com/-TrxqwBfKJuY/TobVyLwwySI/AAAAAAAAADk/bcR8HsruEeY/h1600/carousel_sprite.png) 0 -300px no-repeat transparent;
+width:15px;
+height:15px;
+display:inline-block;
+margin:12px 5px 0 0
+}
+.pagination a.selected {
+background-position:-25px -300px;
+cursor:default
+}
+a.prev span,a.next span,.pagination a span {
+display:none
+}
+]]&gt;&lt;/b:skin&gt;
+&lt;b:if cond='data:blog.pageType == &amp;quot;index&amp;quot;'&gt;
+&lt;style type='text/css'&gt;
+
+/* List Style */
+.post {
+width:652px;
+background:#fff url(http://4.bp.blogspot.com/-i1DxbZx-CLA/ToSeO_R8tiI/AAAAAAAAABw/-wUayiAFmyQ/s1600/header-shadow.png) repeat-x top;
+border:1px solid #ddd;
+border-radius:2px;
+float:left;
+margin:0 0 15px;
+padding:0;
+}
+.post h3 {
+background:#f3f3f3 url(http://2.bp.blogspot.com/-S4AKqSDPUEs/ToSYCWJy4qI/AAAAAAAAABI/conBgqSajOY/s1600/fade.png) repeat-x top left;
+color:#111;
+text-shadow:1px 1px 1px #fff;
+border-bottom:1px solid #ddd;
+font-size:16px;
+font-weight:700;
+margin:0;
+padding:10px 15px;
+}
+.post .post-body {
+width:620px;
+background:#fbfbfb;
+border:1px solid #fff;
+padding:15px;
+}
+.post .item_price {
+top:148px;
+font-size:15px;
+background:#de360f;
+font-family:&amp;#39;
+color:#fff;
+font-weight:700;
+left:16px;
+position:absolute;
+padding:1px 5px;
+height:20px;
+}
+.post .item_image {
+background:#fff;
+border:1px solid #ddd;
+float:left;
+height:100px;
+text-align:center;
+width:124px;
+margin:0 15px 10px 0;
+padding:5px;
+}
+.post .item_thumb {
+height:92px;
+width:92px;
+}
+.post img {
+border:none;
+padding:0;
+}
+
+
+/* Grid Style */
+.grid {
+background:#fff url(http://4.bp.blogspot.com/-i1DxbZx-CLA/ToSeO_R8tiI/AAAAAAAAABw/-wUayiAFmyQ/s1600/header-shadow.png) repeat-x top;
+border:1px solid #ddd;
+border-radius:2px;
+width:158px;
+margin:0 5px 5px 0;
+padding:0;
+}
+.grid h3 {
+background:#f3f3f3 url(http://2.bp.blogspot.com/-S4AKqSDPUEs/ToSYCWJy4qI/AAAAAAAAABI/conBgqSajOY/s1600/fade.png) repeat-x top left;
+color:#111;
+text-shadow:1px 1px 1px #fff;
+border-bottom:1px solid #ddd;
+font-size:13px;
+font-weight:700;
+margin:0;
+padding:5px 10px;
+}
+.grid .post-body {
+background:#fbfbfb;
+width:136px;
+border:1px solid #fff;
+padding:10px;
+}
+.grid .item_price {
+top:130px;
+left:11px;
+}
+.grid .item_Description {
+display:none;
+visibility:hidden;
+}
+.grid .item_image {
+margin:0;
+}
+.grid img {
+border:none;
+padding:0;
+}
+
+/* Add Cart and Readmore */
+a.item_add,a.more_info {
+position:relative;
+color:#838383;
+font-family:Arial,Helvetica,san-serif;
+font-size:9px;
+letter-spacing:-1px;
+height:23px;
+line-height:24px;
+text-align:center;
+text-decoration:none;
+text-shadow:1px 1px 1px #fff;
+text-transform:uppercase;
+margin-top:10px;
+font-weight:400;
+border-radius:0;
+border:none;
+padding:0;
+}
+a.item_add {
+background:url(https://lh6.googleusercontent.com/-zN16YGsnhqk/TjQ6Xo9nlQI/AAAAAAAAAsc/3qDZCtHtHBQ/add-button.png) no-repeat;
+float:left;
+width:70px;
+}
+a.more_info {
+background:url(https://lh3.googleusercontent.com/-RYFYkcgTnh8/TjQ6Yc6hc3I/AAAAAAAAAso/7i5M8Jczk54/more-button.png) no-repeat bottom right;
+float:left;
+width:65px;
+border-left:1px solid #ddd;
+}
+a.item_add:hover {
+background-position:bottom left;
+color:#4c4b4b;
+}
+a.more_info:hover {
+background-position:top right;
+color:#4c4b4b;
+}
+
+&lt;/style&gt;
+&lt;/b:if&gt;
+
+
+&lt;/head&gt;
+&lt;body&gt;&lt;div class='clearfix' id='container'&gt;
+&lt;div id='top-bar'&gt;
+&lt;ul id='top-nav'&gt;
+&lt;li&gt;&lt;a href='#'&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='#'&gt;Category&lt;/a&gt;
+	&lt;ul class='sub-menu'&gt;
+	&lt;li&gt;&lt;a href='#'&gt;Category 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href='#'&gt;Category 2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href='#'&gt;Category 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href='#'&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='#'&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+		
+&lt;div id='top-bar-right'&gt;
+&lt;form action='/' id='topsearch' method='get'&gt;
+&lt;input id='q' name='q' onblur='if(this.value.length == 0) this.value=&amp;apos;Search this site..&amp;apos;;' onclick='if(this.value == &amp;apos;Search this site..&amp;apos;) this.value=&amp;apos;&amp;apos;;' type='text' value='Search this site..'/&gt;
+&lt;input class='searchsubmit' type='submit' value='Go'/&gt;
+&lt;/form&gt;
+&lt;ul id='top_social'&gt;
+&lt;li class='social_facebook'&gt;
+&lt;a href='#' tooltip='facebook'&gt;&lt;span&gt;facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;				
+&lt;li class='social_twitter'&gt;
+&lt;a href='#' tooltip='twitter'&gt;&lt;span&gt;twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;				
+&lt;li class='social_linkedin'&gt;
+&lt;a href='#' tooltip='linkedin'&gt;&lt;span&gt;linkedin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;		
+&lt;li class='social_rss'&gt;
+&lt;a href='#' tooltip='linkedin'&gt;&lt;span&gt;linkedin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;												
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class='clearfix' id='header-wrapper'&gt;
+&lt;b:section class='header' id='header' showaddelement='no'&gt;
+&lt;b:widget id='Header1' locked='true' title='Blogger Store (Header)' type='Header'&gt;
+&lt;b:includable id='main'&gt;
+
+  &lt;b:if cond='data:useImage'&gt;
+    &lt;b:if cond='data:imagePlacement == &amp;quot;BEHIND&amp;quot;'&gt;
+      &lt;!--
+      Show image as background to text. You can't really calculate the width
+      reliably in JS because margins are not taken into account by any of
+      clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
+      width if the user is using shrink to fit.
+      This results in a margin-width's worth of pixels being cropped. If the
+      user is not using shrink to fit then we expand the header.
+      --&gt;
+      &lt;b:if cond='data:mobile'&gt;
+          &lt;div id='header-inner'&gt;
+            &lt;div class='titlewrapper' style='background: transparent'&gt;
+              &lt;h1 class='title' style='background: transparent; border-width: 0px'&gt;
+                &lt;b:include name='title'/&gt;
+              &lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;b:include name='description'/&gt;
+          &lt;/div&gt;
+        &lt;b:else/&gt;
+          &lt;div expr:style='&amp;quot;background-image: url(\&amp;quot;&amp;quot; + data:sourceUrl + &amp;quot;\&amp;quot;); &amp;quot;                        + &amp;quot;background-position: &amp;quot;                        + data:backgroundPositionStyleStr + &amp;quot;; &amp;quot;                        + data:widthStyleStr                        + &amp;quot;min-height: &amp;quot; + data:height                        + &amp;quot;_height: &amp;quot; + data:height                        + &amp;quot;background-repeat: no-repeat; &amp;quot;' id='header-inner'&gt;
+            &lt;div class='titlewrapper' style='background: transparent'&gt;
+              &lt;h1 class='title' style='background: transparent; border-width: 0px'&gt;
+                &lt;b:include name='title'/&gt;
+              &lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;b:include name='description'/&gt;
+          &lt;/div&gt;
+        &lt;/b:if&gt;
+    &lt;b:else/&gt;
+      &lt;!--Show the image only--&gt;
+      &lt;div id='header-inner'&gt;
+        &lt;a expr:href='data:blog.homepageUrl' style='display: block'&gt;
+          &lt;img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &amp;quot;_headerimg&amp;quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/&gt;
+        &lt;/a&gt;
+        &lt;!--Show the description--&gt;
+        &lt;b:if cond='data:imagePlacement == &amp;quot;BEFORE_DESCRIPTION&amp;quot;'&gt;
+          &lt;b:include name='description'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+  &lt;b:else/&gt;
+    &lt;!--No header image --&gt;
+    &lt;div id='header-inner'&gt;
+      &lt;div class='titlewrapper'&gt;
+        &lt;h1 class='title'&gt;
+          &lt;b:include name='title'/&gt;
+        &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;b:include name='description'/&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='title'&gt;
+  &lt;b:if cond='data:blog.url == data:blog.homepageUrl'&gt;
+    &lt;data:title/&gt;
+  &lt;b:else/&gt;
+    &lt;a expr:href='data:blog.homepageUrl'&gt;&lt;data:title/&gt;&lt;/a&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='description'&gt;
+  &lt;div class='descriptionwrapper'&gt;
+    &lt;p class='description'&gt;&lt;span&gt;&lt;data:description/&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+&lt;!--//end of .header--&gt;
+
+&lt;div class='header-right-element'&gt;
+&lt;b:section class='ads-half-banner' id='ads-half-banner'&gt;
+&lt;b:widget id='HTML1' locked='false' title='' type='HTML'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;!-- only display title if it's non-empty --&gt;
+  &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+    &lt;h2 class='title'&gt;&lt;data:title/&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div class='widget-content'&gt;
+    &lt;data:content/&gt;
+  &lt;/div&gt;
+
+  &lt;b:include name='quickedit'/&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+&lt;/div&gt;
+&lt;!--//end of .header-right-element--&gt;
+
+&lt;div class='clearfix' id='menu-wrapper'&gt;
+&lt;div class='menu-cart'&gt;
+&lt;a class='mycart' href='#'&gt;My Cart : &lt;span class='simpleCart_quantity'/&gt; item(s)&lt;/a&gt;  
+Total Price : &lt;span class='simpleCart_total'/&gt;
+&lt;div class='bag'&gt;
+&lt;div class='simpleCart_items'/&gt;
+&lt;div class='clear'/&gt;
+&lt;a class='simpleCart_empty' href='javascript:;'&gt;Empty Cart&lt;/a&gt;&lt;a class='simpleCart_checkout' href='javascript:;'&gt;Checkout&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--//end of .menu-cart--&gt;
+
+&lt;ul class='nav'&gt;
+&lt;li&gt;&lt;a class='current' href='/'&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='#'&gt;Product Category&lt;/a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href='#'&gt;Camera&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href='#'&gt;Gadget&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href='#'&gt;Electronic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href='#'&gt;Phone&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href='/p/sample-page.html'&gt;Sample Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://javatemplates.com/blog/installing-and-customize-blogger-store-v-2-0'&gt;How To Use ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://javatemplates.com/2011/blogger-store-v2'&gt;Get it !&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;!--//end of #menu--&gt;
+
+&lt;/div&gt;
+&lt;!--//end of #header-wrapper--&gt;
+
+&lt;div class='clearfix' id='main-content'&gt;
+
+&lt;div class='image_carousel clearfix'&gt;
+&lt;script type='text/javascript'&gt;
+//&lt;![CDATA[
+random = true;
+product_image = new Array();
+product_image[0] = "/noimage.png"; // Image URL for product wich have no a thumbnail.
+product_image_width = 250; // Product image width.
+product_image_height = 260; // Product image height.
+product_image_number = 9; // Value to show item.
+//]]&gt;
+&lt;/script&gt;
+&lt;script src='/feeds/posts/default?orderby=updated&amp;amp;alt=json-in-script&amp;amp;callback=featured_product' type='text/javascript'/&gt;
+&lt;div class='clear'/&gt;
+&lt;a class='prev' href='#' id='featured-product_prev'&gt;&lt;span&gt;prev&lt;/span&gt;&lt;/a&gt;
+&lt;a class='next' href='#' id='featured-product_next'&gt;&lt;span&gt;next&lt;/span&gt;&lt;/a&gt;
+&lt;div class='pagination' id='featured-product_pag'/&gt;
+&lt;/div&gt; &lt;!-- /image_carousel --&gt;
+
+&lt;div class='content-left'&gt;
+&lt;b:if cond='data:blog.pageType == &amp;quot;index&amp;quot;'&gt;
+&lt;div class='display'&gt;
+&lt;a class='grid_view' href='#'&gt;Grid&lt;/a&gt;
+&lt;a class='list_view' href='#'&gt;Detail&lt;/a&gt;
+&lt;/div&gt;
+&lt;/b:if&gt;
+&lt;b:section class='main' id='main' showaddelement='no'&gt;
+&lt;b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'&gt;
+&lt;b:includable id='nextprev'&gt;
+  &lt;div class='blog-pager' id='blog-pager'&gt;
+    &lt;b:if cond='data:newerPageUrl'&gt;
+      &lt;span id='blog-pager-newer-link'&gt;
+      &lt;a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-newer-link&amp;quot;' title='Previous Product'&gt;&amp;#171; Prev Product&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:if cond='data:olderPageUrl'&gt;
+      &lt;span id='blog-pager-older-link'&gt;
+      &lt;a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-older-link&amp;quot;' title='Next Product'&gt;Next Product &amp;#187;&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/b:if&gt;
+&lt;span id='home-link'&gt;
+    &lt;a class='home-link' expr:href='data:blog.homepageUrl'&gt;&lt;data:homeMsg/&gt;&lt;/a&gt;
+&lt;/span&gt;
+    &lt;b:if cond='data:mobileLinkUrl'&gt;
+      &lt;div class='blog-mobile-link'&gt;
+        &lt;a expr:href='data:mobileLinkUrl'&gt;&lt;data:mobileLinkMsg/&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+  &lt;/div&gt;
+  &lt;div class='clear'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='shareButtons' var='post'&gt;
+  &lt;b:if cond='data:top.showEmailButton'&gt;&lt;a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=email&amp;quot;' expr:title='data:top.emailThisMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.emailThisMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showBlogThisButton'&gt;&lt;a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=blog&amp;quot;' expr:onclick='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=270,width=475\&amp;quot;); return false;&amp;quot;' expr:title='data:top.blogThisMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.blogThisMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showTwitterButton'&gt;&lt;a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=twitter&amp;quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToTwitterMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showFacebookButton'&gt;&lt;a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=facebook&amp;quot;' expr:onclick='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=430,width=640\&amp;quot;); return false;&amp;quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToFacebookMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showOrkutButton'&gt;&lt;a class='goog-inline-block share-button sb-orkut' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=orkut&amp;quot;' expr:title='data:top.shareToOrkutMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToOrkutMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showDummy'&gt;&lt;div class='goog-inline-block dummy-container'&gt;&lt;data:post.dummyTag/&gt;&lt;/div&gt;&lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='backlinks' var='post'&gt;
+  &lt;a name='links'/&gt;&lt;h4&gt;&lt;data:post.backlinksLabel/&gt;&lt;/h4&gt;
+  &lt;b:if cond='data:post.numBacklinks != 0'&gt;
+    &lt;dl class='comments-block' id='comments-block'&gt;
+      &lt;b:loop values='data:post.backlinks' var='backlink'&gt;
+        &lt;div class='collapsed-backlink backlink-control'&gt;
+          &lt;dt class='comment-title'&gt;
+            &lt;span class='backlink-toggle-zippy'&gt;&amp;#160;&lt;/span&gt;
+            &lt;a expr:href='data:backlink.url' rel='nofollow'&gt;&lt;data:backlink.title/&gt;&lt;/a&gt;
+            &lt;b:include data='backlink' name='backlinkDeleteIcon'/&gt;
+          &lt;/dt&gt;
+          &lt;dd class='comment-body collapseable'&gt;
+            &lt;data:backlink.snippet/&gt;
+          &lt;/dd&gt;
+          &lt;dd class='comment-footer collapseable'&gt;
+            &lt;span class='comment-author'&gt;&lt;data:post.authorLabel/&gt; &lt;data:backlink.author/&gt;&lt;/span&gt;
+            &lt;span class='comment-timestamp'&gt;&lt;data:post.timestampLabel/&gt; &lt;data:backlink.timestamp/&gt;&lt;/span&gt;
+          &lt;/dd&gt;
+        &lt;/div&gt;
+      &lt;/b:loop&gt;
+    &lt;/dl&gt;
+  &lt;/b:if&gt;
+  &lt;p class='comment-footer'&gt;
+    &lt;a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &amp;quot;_backlinks-create-link&amp;quot;' target='_blank'&gt;&lt;data:post.createLinkLabel/&gt;&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-main' var='top'&gt;
+    &lt;!-- posts --&gt;
+    &lt;div class='blog-posts hfeed'&gt;
+
+      &lt;b:include data='top' name='status-message'/&gt;
+
+      &lt;b:if cond='data:blog.pageType == &amp;quot;index&amp;quot;'&gt;
+        &lt;b:loop values='data:posts' var='post'&gt;
+          &lt;b:include data='post' name='mobile-index-post'/&gt;
+        &lt;/b:loop&gt;
+      &lt;b:else/&gt;
+        &lt;b:loop values='data:posts' var='post'&gt;
+          &lt;b:include data='post' name='mobile-post'/&gt;
+        &lt;/b:loop&gt;
+      &lt;/b:if&gt;
+    &lt;/div&gt;
+
+   &lt;b:include name='mobile-nextprev'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='post' var='post'&gt;
+  &lt;div class='post grid hentry uncustomized-post-template simpleCart_shelfItem'&gt;
+    &lt;a expr:name='data:post.id'/&gt;
+    &lt;b:if cond='data:post.title'&gt;
+      &lt;h3 class='post-title entry-title item_name'&gt;
+      &lt;b:if cond='data:post.link'&gt;
+        &lt;a expr:href='data:post.link'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+      &lt;b:else/&gt;
+        &lt;b:if cond='data:post.url'&gt;
+          &lt;b:if cond='data:blog.url != data:post.url'&gt;
+            &lt;a expr:href='data:post.url'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+          &lt;b:else/&gt;
+            &lt;data:post.title/&gt;
+          &lt;/b:if&gt;
+        &lt;b:else/&gt;
+          &lt;data:post.title/&gt;
+        &lt;/b:if&gt;
+      &lt;/b:if&gt;
+      &lt;/h3&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='post-header'&gt;
+    &lt;div class='post-header-line-1'/&gt;
+    &lt;/div&gt;
+
+&lt;div class='post-body entry-content clearfix' expr:id='&amp;quot;post-body-&amp;quot; + data:post.id'&gt;
+&lt;data:post.body/&gt;
+&lt;div style='clear: both;'/&gt; &lt;!-- clear for photos floats --&gt;
+&lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+&lt;a class='item_add' href='javascript:;'&gt;Add to Cart&lt;/a&gt;
+&lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+&lt;a class='more_info' href='javascript:;'&gt;More Info&lt;/a&gt;
+&lt;/b:if&gt;
+&lt;/b:if&gt;
+      
+    &lt;/div&gt;
+
+    &lt;b:if cond='data:post.hasJumpLink'&gt;
+      &lt;div class='jump-link'&gt;
+        &lt;a expr:href='data:post.url + &amp;quot;#more&amp;quot;' expr:title='data:post.title'&gt;&lt;data:post.jumpText/&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='post-footer'&gt;
+    &lt;div class='post-footer-line post-footer-line-1'&gt;
+      &lt;span class='post-author vcard'&gt;
+        &lt;b:if cond='data:top.showAuthor'&gt;
+          &lt;data:top.authorLabel/&gt;
+          &lt;span class='fn'&gt;&lt;data:post.author/&gt;&lt;/span&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+
+      &lt;span class='post-timestamp'&gt;
+        &lt;b:if cond='data:top.showTimestamp'&gt;
+          &lt;data:top.timestampLabel/&gt;
+        &lt;b:if cond='data:post.url'&gt;
+          &lt;a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'&gt;&lt;abbr class='published' expr:title='data:post.timestampISO8601'&gt;&lt;data:post.timestamp/&gt;&lt;/abbr&gt;&lt;/a&gt;
+        &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+
+      &lt;span class='reaction-buttons'&gt;
+        &lt;b:if cond='data:top.showReactions'&gt;
+          &lt;table border='0' cellpadding='0' cellspacing='0' width='100%'&gt;&lt;tr&gt;
+            &lt;td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'&gt;
+              &lt;span class='reactions-label'&gt;
+              &lt;data:top.reactionsLabel/&gt;&lt;/span&gt;&amp;#160;&lt;/td&gt;
+            &lt;td&gt;&lt;iframe allowtransparency='true' class='reactions-iframe' expr:src='data:post.reactionsUrl' frameborder='0' name='reactions' scrolling='no'/&gt;&lt;/td&gt;
+           &lt;/tr&gt;&lt;/table&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+
+      &lt;span class='star-ratings'&gt;
+        &lt;b:if cond='data:top.showStars'&gt;
+           &lt;div expr:g:background-color='data:backgroundColor' expr:g:text-color='data:textColor' expr:g:url='data:post.absoluteUrl' g:height='42' g:type='RatingPanel' g:width='280'/&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+
+      &lt;span class='post-comment-link'&gt;
+        &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+          &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+            &lt;b:if cond='data:post.allowComments'&gt;
+              &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+            &lt;/b:if&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+
+       &lt;!-- backlinks --&gt;
+       &lt;span class='post-backlinks post-comment-link'&gt;
+         &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+           &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+             &lt;b:if cond='data:post.showBacklinks'&gt;
+               &lt;a class='comment-link' expr:href='data:post.url + &amp;quot;#links&amp;quot;'&gt;&lt;data:top.backlinkLabel/&gt;&lt;/a&gt;
+             &lt;/b:if&gt;
+           &lt;/b:if&gt;
+         &lt;/b:if&gt;
+       &lt;/span&gt;
+
+      &lt;span class='post-icons'&gt;
+        &lt;!-- email post links --&gt;
+        &lt;b:if cond='data:post.emailPostUrl'&gt;
+          &lt;span class='item-action'&gt;
+          &lt;a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'&gt;
+              &lt;img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/&gt;
+          &lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/b:if&gt;
+
+        &lt;!-- quickedit pencil --&gt;
+        &lt;b:include data='post' name='postQuickEdit'/&gt;
+      &lt;/span&gt;
+
+      &lt;!-- share buttons --&gt;
+      &lt;div class='post-share-buttons goog-inline-block'&gt;
+        &lt;b:if cond='data:post.sharePostUrl'&gt;
+          &lt;b:include data='post' name='shareButtons'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class='post-footer-line post-footer-line-2'&gt;
+      &lt;span class='post-labels'&gt;
+        &lt;b:if cond='data:post.labels'&gt;
+          &lt;data:postLabelsLabel/&gt;
+          &lt;b:loop values='data:post.labels' var='label'&gt;
+            &lt;a expr:href='data:label.url' rel='tag'&gt;&lt;data:label.name/&gt;&lt;/a&gt;&lt;b:if cond='data:label.isLast != &amp;quot;true&amp;quot;'&gt;,&lt;/b:if&gt;
+          &lt;/b:loop&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class='post-footer-line post-footer-line-3'&gt;
+      &lt;span class='post-location'&gt;
+        &lt;b:if cond='data:top.showLocation'&gt;
+          &lt;b:if cond='data:post.location'&gt;
+            &lt;data:postLocationLabel/&gt;
+            &lt;a expr:href='data:post.location.mapsUrl' target='_blank'&gt;&lt;data:post.location.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='status-message'&gt;
+  &lt;b:if cond='data:navMessage'&gt;
+  &lt;div class='status-msg-wrap'&gt;
+    &lt;div class='status-msg-body'&gt;
+      &lt;data:navMessage/&gt;
+    &lt;/div&gt;
+    &lt;div class='status-msg-border'&gt;
+      &lt;div class='status-msg-bg'&gt;
+        &lt;div class='status-msg-hidden'&gt;&lt;data:navMessage/&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style='clear: both;'/&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='comment-form' var='post'&gt;
+  &lt;div class='comment-form'&gt;
+    &lt;a name='comment-form'/&gt;
+    &lt;b:if cond='data:mobile'&gt;
+      &lt;h4 id='comment-post-message'&gt;
+        &lt;a expr:id='data:widget.instanceId + &amp;quot;_comment-editor-toggle-link&amp;quot;' href='javascript:void(0)'&gt;&lt;data:postCommentMsg/&gt;&lt;/a&gt;&lt;/h4&gt;
+      &lt;p&gt;&lt;data:blogCommentMessage/&gt;&lt;/p&gt;
+      &lt;data:blogTeamBlogMessage/&gt;
+      &lt;a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/&gt;
+      &lt;iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/&gt;
+    &lt;b:else/&gt;
+      &lt;h4 id='comment-post-message'&gt;&lt;data:postCommentMsg/&gt;&lt;/h4&gt;
+      &lt;p&gt;&lt;data:blogCommentMessage/&gt;&lt;/p&gt;
+      &lt;data:blogTeamBlogMessage/&gt;
+      &lt;a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/&gt;
+      &lt;iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'/&gt;
+    &lt;/b:if&gt;
+    &lt;data:post.friendConnectJs/&gt;
+    &lt;data:post.cmtfpIframe/&gt;
+    &lt;script type='text/javascript'&gt;
+      BLOG_CMT_createIframe(&amp;#39;&lt;data:post.appRpcRelayPath/&gt;&amp;#39;, &amp;#39;&lt;data:post.communityId/&gt;&amp;#39;);
+    &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='backlinkDeleteIcon' var='backlink'&gt;
+  &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:backlink.adminClass'&gt;
+    &lt;a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'&gt;
+      &lt;img src='//www.blogger.com/img/icon_delete13.gif'/&gt;
+    &lt;/a&gt;
+  &lt;/span&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-nextprev'&gt;
+  &lt;div class='blog-pager' id='blog-pager'&gt;
+    &lt;b:if cond='data:newerPageUrl'&gt;
+      &lt;div class='mobile-link-button' id='blog-pager-newer-link'&gt;
+      &lt;a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-newer-link&amp;quot;' expr:title='data:newerPageTitle'&gt;&amp;amp;lsaquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:if cond='data:olderPageUrl'&gt;
+      &lt;div class='mobile-link-button' id='blog-pager-older-link'&gt;
+      &lt;a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-older-link&amp;quot;' expr:title='data:olderPageTitle'&gt;&amp;amp;rsaquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='mobile-link-button' id='blog-pager-home-link'&gt;
+    &lt;a class='home-link' expr:href='data:blog.homepageUrl'&gt;&lt;data:homeMsg/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class='mobile-desktop-link'&gt;
+      &lt;a class='home-link' expr:href='data:desktopLinkUrl'&gt;&lt;data:desktopLinkMsg/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;div class='clear'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-post' var='post'&gt;
+  &lt;div class='date-outer'&gt;
+    &lt;b:if cond='data:post.dateHeader'&gt;
+      &lt;h2 class='date-header'&gt;&lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+    &lt;div class='date-posts'&gt;
+      &lt;div class='post-outer'&gt;
+
+        &lt;div class='post grid hentry uncustomized-post-template'&gt;
+          &lt;a expr:name='data:post.id'/&gt;
+          &lt;b:if cond='data:post.title'&gt;
+            &lt;h3 class='post-title entry-title'&gt;
+              &lt;b:if cond='data:post.link'&gt;
+                &lt;a expr:href='data:post.link'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+              &lt;b:else/&gt;
+                &lt;b:if cond='data:post.url'&gt;
+                  &lt;b:if cond='data:blog.url != data:post.url'&gt;
+                    &lt;a expr:href='data:post.url'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+                  &lt;b:else/&gt;
+                    &lt;data:post.title/&gt;
+                  &lt;/b:if&gt;
+                &lt;b:else/&gt;
+                  &lt;data:post.title/&gt;
+                &lt;/b:if&gt;
+              &lt;/b:if&gt;
+            &lt;/h3&gt;
+          &lt;/b:if&gt;
+
+          &lt;div class='post-header'&gt;
+            &lt;div class='post-header-line-1'/&gt;
+          &lt;/div&gt;
+
+          &lt;div class='post-body entry-content' expr:id='&amp;quot;post-body-&amp;quot; + data:post.id'&gt;
+            &lt;data:post.body/&gt;
+            &lt;div style='clear: both;'/&gt; &lt;!-- clear for photos floats --&gt;
+          &lt;/div&gt;
+
+          &lt;div class='post-footer'&gt;
+            &lt;div class='post-footer-line post-footer-line-1'&gt;
+              &lt;span class='post-author vcard'&gt;
+                &lt;b:if cond='data:top.showAuthor'&gt;
+                  &lt;data:top.authorLabel/&gt;
+                  &lt;span class='fn'&gt;&lt;data:post.author/&gt;&lt;/span&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+
+              &lt;span class='post-timestamp'&gt;
+                &lt;b:if cond='data:top.showTimestamp'&gt;
+                  &lt;data:top.timestampLabel/&gt;
+                  &lt;b:if cond='data:post.url'&gt;
+                    &lt;a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'&gt;&lt;abbr class='published' expr:title='data:post.timestampISO8601'&gt;&lt;data:post.timestamp/&gt;&lt;/abbr&gt;&lt;/a&gt;
+                  &lt;/b:if&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+
+              &lt;span class='post-comment-link'&gt;
+                &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+                  &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+                    &lt;b:if cond='data:post.allowComments'&gt;
+                      &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+                    &lt;/b:if&gt;
+                  &lt;/b:if&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;div class='post-footer-line post-footer-line-2'&gt;
+              &lt;b:if cond='data:top.showMobileShare'&gt;
+                &lt;div class='mobile-link-button goog-inline-block' id='mobile-share-button'&gt;
+                  &lt;a href='javascript:void(0);'&gt;&lt;data:shareMsg/&gt;&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/b:if&gt;
+              &lt;b:if cond='data:top.showDummy'&gt;
+                &lt;div class='goog-inline-block dummy-container'&gt;&lt;data:post.dummyTag/&gt;&lt;/div&gt;
+              &lt;/b:if&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;b:if cond='data:blog.pageType == &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='postQuickEdit' var='post'&gt;
+  &lt;b:if cond='data:post.editUrl'&gt;
+    &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:post.adminClass'&gt;
+      &lt;a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'&gt;
+        &lt;img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/&gt;
+      &lt;/a&gt;
+    &lt;/span&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='main' var='top'&gt;
+  &lt;b:if cond='data:mobile == &amp;quot;false&amp;quot;'&gt;
+
+    &lt;!-- posts --&gt;
+    &lt;div class='blog-posts hfeed'&gt;
+
+      &lt;b:include data='top' name='status-message'/&gt;
+
+      &lt;data:defaultAdStart/&gt;
+      &lt;b:loop values='data:posts' var='post'&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &lt;b:if cond='data:post.isFirstPost == &amp;quot;false&amp;quot;'&gt;
+            &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &amp;lt;div class=&amp;quot;date-outer&amp;quot;&amp;gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.dateHeader'&gt;
+          &lt;h2 class='date-header'&gt;&lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;&lt;/h2&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &amp;lt;div class=&amp;quot;date-posts&amp;quot;&amp;gt;
+        &lt;/b:if&gt;
+        &lt;div class='post-outer'&gt;
+        &lt;b:include data='post' name='post'/&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;/div&gt;
+        &lt;b:if cond='data:post.includeAd'&gt;
+          &lt;b:if cond='data:post.isFirstPost'&gt;
+            &lt;data:defaultAdEnd/&gt;
+          &lt;b:else/&gt;
+            &lt;data:adEnd/&gt;
+          &lt;/b:if&gt;
+          &lt;div class='inline-ad'&gt;
+            &lt;data:adCode/&gt;
+          &lt;/div&gt;
+          &lt;data:adStart/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.trackLatency'&gt;
+          &lt;data:post.latencyJs/&gt;
+        &lt;/b:if&gt;
+      &lt;/b:loop&gt;
+      &lt;b:if cond='data:numPosts != 0'&gt;
+        &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+      &lt;/b:if&gt;
+      &lt;data:adEnd/&gt;
+    &lt;/div&gt;
+
+    &lt;!-- navigation --&gt;
+    &lt;b:include name='nextprev'/&gt;
+
+    &lt;!-- feed links --&gt;
+    &lt;b:include name='feedLinks'/&gt;
+
+    &lt;b:if cond='data:top.showStars'&gt;
+      &lt;script src='//www.google.com/jsapi' type='text/javascript'/&gt;
+      &lt;script type='text/javascript'&gt;
+        google.load(&amp;quot;annotations&amp;quot;, &amp;quot;1&amp;quot;, {&amp;quot;locale&amp;quot;: &amp;quot;&lt;data:top.languageCode/&gt;&amp;quot;});
+        function initialize() {
+          google.annotations.setApplicationId(&lt;data:top.blogspotReviews/&gt;);
+          google.annotations.createAll();
+          google.annotations.fetch();
+        }
+        google.setOnLoadCallback(initialize);
+      &lt;/script&gt;
+    &lt;/b:if&gt;
+
+  &lt;b:else/&gt;
+    &lt;b:include name='mobile-main'/&gt;
+  &lt;/b:if&gt;
+
+  &lt;b:if cond='data:top.showDummy'&gt;
+    &lt;data:top.dummyBootstrap/&gt;
+  &lt;/b:if&gt;
+
+&lt;/b:includable&gt;
+&lt;b:includable id='commentDeleteIcon' var='comment'&gt;
+  &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:comment.adminClass'&gt;
+    &lt;b:if cond='data:showCmtPopup'&gt;
+      &lt;div class='goog-toggle-button'&gt;
+        &lt;div class='goog-inline-block comment-action-icon'/&gt;
+      &lt;/div&gt;
+    &lt;b:else/&gt;
+      &lt;a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'&gt;
+        &lt;img src='//www.blogger.com/img/icon_delete13.gif'/&gt;
+      &lt;/a&gt;
+    &lt;/b:if&gt;
+  &lt;/span&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='feedLinks'&gt;
+  &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt; &lt;!-- Blog feed links --&gt;
+    &lt;b:if cond='data:feedLinks'&gt;
+      &lt;div class='blog-feeds'&gt;
+        &lt;b:include data='feedLinks' name='feedLinksBody'/&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:else/&gt; &lt;!--Post feed links --&gt;
+    &lt;div class='post-feeds'&gt;
+      &lt;b:loop values='data:posts' var='post'&gt;
+        &lt;b:if cond='data:post.allowComments'&gt;
+          &lt;b:if cond='data:post.feedLinks'&gt;
+            &lt;b:include data='post.feedLinks' name='feedLinksBody'/&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/b:loop&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-index-post' var='post'&gt;
+  &lt;div class='mobile-date-outer date-outer'&gt;
+    &lt;b:if cond='data:post.dateHeader'&gt;
+      &lt;div class='date-header'&gt;
+        &lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='mobile-post-outer'&gt;
+      &lt;a expr:href='data:post.url'&gt;
+        &lt;h3 class='mobile-index-title entry-title'&gt;
+          &lt;data:post.title/&gt;
+        &lt;/h3&gt;
+
+        &lt;div class='mobile-index-arrow'&gt;&amp;amp;rsaquo;&lt;/div&gt;
+
+        &lt;div class='mobile-index-contents'&gt;
+          &lt;b:if cond='data:post.thumbnailUrl'&gt;
+            &lt;div class='mobile-index-thumbnail'&gt;
+              &lt;div class='Image'&gt;
+                &lt;img expr:src='data:post.thumbnailUrl'/&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/b:if&gt;
+
+          &lt;div class='post-body'&gt;
+            &lt;b:if cond='data:post.snippet'&gt;&lt;data:post.snippet/&gt;&lt;/b:if&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div style='clear: both;'/&gt;
+      &lt;/a&gt;
+
+      &lt;div class='mobile-index-comment'&gt;
+        &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:if cond='data:post.allowComments'&gt;
+            &lt;b:if cond='data:post.numComments != 0'&gt;
+              &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+            &lt;/b:if&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='feedLinksBody' var='links'&gt;
+  &lt;div class='feed-links'&gt;
+  &lt;data:feedLinksMsg/&gt;
+  &lt;b:loop values='data:links' var='f'&gt;
+     &lt;a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'&gt;&lt;data:f.name/&gt; (&lt;data:f.feedType/&gt;)&lt;/a&gt;
+  &lt;/b:loop&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='comments' var='post'&gt;
+&lt;div class='comments' id='comments'&gt;
+
+
+    &lt;a name='comments'/&gt;
+    &lt;b:if cond='data:post.allowComments'&gt;
+      &lt;h4&gt;
+        &lt;b:if cond='data:post.numComments == 1'&gt;
+          1 &lt;data:commentLabel/&gt;:
+        &lt;b:else/&gt;
+          &lt;data:post.numComments/&gt; &lt;data:commentLabelPlural/&gt;:
+        &lt;/b:if&gt;
+
+      &lt;/h4&gt;
+
+      &lt;b:if cond='data:post.commentPagingRequired'&gt;
+        &lt;span class='paging-control-container'&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'&gt;&lt;data:post.oldestLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'&gt;&lt;data:post.olderLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;data:post.commentRangeText/&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'&gt;&lt;data:post.newerLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'&gt;&lt;data:post.newestLinkText/&gt;&lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/b:if&gt;
+
+            &lt;div id='comments-block3'&gt;
+&lt;b:loop values='data:post.comments' var='comment'&gt;
+
+&lt;div id='comment-header'&gt;
+&lt;div expr:class='&amp;quot;comment-author &amp;quot; + data:comment.authorClass' expr:id='data:comment.anchorName'&gt;
+&lt;div id='comment-profile-image'&gt;
+&lt;b:if cond='data:blog.enabledCommentProfileImages'&gt;
+&lt;data:comment.authorAvatarImage/&gt;
+&lt;/b:if&gt;
+&lt;/div&gt;
+
+&lt;div id='comment-name-url'&gt;
+&lt;a expr:name='data:comment.anchorName'/&gt;
+&lt;b:if cond='data:comment.authorUrl'&gt;
+&lt;a class='comments-autor-name' expr:href='data:comment.authorUrl' rel='nofollow'&gt;&lt;data:comment.author/&gt;&lt;/a&gt;
+&lt;b:else/&gt;
+&lt;a class='comments-autor-name'&gt; &lt;data:comment.author/&gt;&lt;/a&gt;
+&lt;/b:if&gt;
+&lt;a class='says'&gt;says:&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div id='comment-date'&gt;
+&lt;span class='comment-timestamp'&gt;
+&lt;a class='comment-permalink'&gt;&lt;data:comment.timestamp/&gt;&lt;/a&gt;
+&lt;b:include data='comment' name='commentDeleteIcon'/&gt;
+&lt;/span&gt;
+&lt;/div&gt;
+
+
+&lt;div id='comment-body'&gt;
+&lt;b:if cond='data:comment.isDeleted'&gt;
+&lt;span class='deleted-comment'&gt;
+&lt;dd class='owner-Body'&gt;&lt;p&gt;&lt;data:comment.body/&gt;&lt;/p&gt;&lt;/dd&gt;
+&lt;/span&gt;
+
+&lt;b:else/&gt;
+&lt;div style='clear:both;'/&gt;
+
+&lt;p&gt;&lt;data:comment.body/&gt;&lt;/p&gt; 
+
+&lt;/b:if&gt;
+&lt;/div&gt;
+
+
+
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;/b:loop&gt;
+&lt;/div&gt;
+
+
+      &lt;b:if cond='data:post.commentPagingRequired'&gt;
+        &lt;span class='paging-control-container'&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'&gt;
+            &lt;data:post.oldestLinkText/&gt;
+          &lt;/a&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'&gt;
+            &lt;data:post.olderLinkText/&gt;
+          &lt;/a&gt;
+          &amp;#160;
+          &lt;data:post.commentRangeText/&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'&gt;
+            &lt;data:post.newerLinkText/&gt;
+          &lt;/a&gt;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'&gt;
+            &lt;data:post.newestLinkText/&gt;
+          &lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/b:if&gt;
+
+      &lt;p class='comment-footer'&gt;
+        &lt;b:if cond='data:post.embedCommentForm'&gt;
+          &lt;b:if cond='data:post.allowNewComments'&gt;
+            &lt;b:include data='post' name='comment-form'/&gt;
+          &lt;b:else/&gt;
+            &lt;data:post.noNewCommentsText/&gt;
+          &lt;/b:if&gt;
+        &lt;b:else/&gt;
+          &lt;b:if cond='data:post.allowComments'&gt;
+            &lt;a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;data:postCommentMsg/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+
+      &lt;/p&gt;
+    &lt;/b:if&gt;
+
+    &lt;div id='backlinks-container'&gt;
+    &lt;div expr:id='data:widget.instanceId + &amp;quot;_backlinks-container&amp;quot;'&gt;
+       &lt;b:if cond='data:post.showBacklinks'&gt;
+         &lt;b:include data='post' name='backlinks'/&gt;
+       &lt;/b:if&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+&lt;/div&gt;
+&lt;!--//end of .content-left--&gt;
+
+&lt;div class='content-right'&gt;
+&lt;b:section class='sidebar' id='sidebar'&gt;
+&lt;b:widget id='Label2' locked='false' title='Product Category' type='Label'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title'&gt;
+    &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div expr:class='&amp;quot;widget-content &amp;quot; + data:display + &amp;quot;-label-widget-content&amp;quot;'&gt;
+    &lt;b:if cond='data:display == &amp;quot;list&amp;quot;'&gt;
+      &lt;ul&gt;
+      &lt;b:loop values='data:labels' var='label'&gt;
+        &lt;li&gt;
+          &lt;b:if cond='data:blog.url == data:label.url'&gt;
+            &lt;span expr:dir='data:blog.languageDirection'&gt;&lt;data:label.name/&gt;&lt;/span&gt;
+          &lt;b:else/&gt;
+            &lt;a expr:dir='data:blog.languageDirection' expr:href='data:label.url'&gt;&lt;data:label.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:showFreqNumbers'&gt;
+            &lt;span dir='ltr'&gt;(&lt;data:label.count/&gt;)&lt;/span&gt;
+          &lt;/b:if&gt;
+        &lt;/li&gt;
+      &lt;/b:loop&gt;
+      &lt;/ul&gt;
+    &lt;b:else/&gt;
+      &lt;b:loop values='data:labels' var='label'&gt;
+        &lt;span expr:class='&amp;quot;label-size label-size-&amp;quot; + data:label.cssSize'&gt;
+          &lt;b:if cond='data:blog.url == data:label.url'&gt;
+            &lt;span expr:dir='data:blog.languageDirection'&gt;&lt;data:label.name/&gt;&lt;/span&gt;
+          &lt;b:else/&gt;
+            &lt;a expr:dir='data:blog.languageDirection' expr:href='data:label.url'&gt;&lt;data:label.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:showFreqNumbers'&gt;
+            &lt;span class='label-count' dir='ltr'&gt;(&lt;data:label.count/&gt;)&lt;/span&gt;
+          &lt;/b:if&gt;
+        &lt;/span&gt;
+      &lt;/b:loop&gt;
+    &lt;/b:if&gt;
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='Label1' locked='false' title='Labels' type='Label'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title'&gt;
+    &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div expr:class='&amp;quot;widget-content &amp;quot; + data:display + &amp;quot;-label-widget-content&amp;quot;'&gt;
+    &lt;b:if cond='data:display == &amp;quot;list&amp;quot;'&gt;
+      &lt;ul&gt;
+      &lt;b:loop values='data:labels' var='label'&gt;
+        &lt;li&gt;
+          &lt;b:if cond='data:blog.url == data:label.url'&gt;
+            &lt;span expr:dir='data:blog.languageDirection'&gt;&lt;data:label.name/&gt;&lt;/span&gt;
+          &lt;b:else/&gt;
+            &lt;a expr:dir='data:blog.languageDirection' expr:href='data:label.url'&gt;&lt;data:label.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:showFreqNumbers'&gt;
+            &lt;span dir='ltr'&gt;(&lt;data:label.count/&gt;)&lt;/span&gt;
+          &lt;/b:if&gt;
+        &lt;/li&gt;
+      &lt;/b:loop&gt;
+      &lt;/ul&gt;
+    &lt;b:else/&gt;
+      &lt;b:loop values='data:labels' var='label'&gt;
+        &lt;span expr:class='&amp;quot;label-size label-size-&amp;quot; + data:label.cssSize'&gt;
+          &lt;b:if cond='data:blog.url == data:label.url'&gt;
+            &lt;span expr:dir='data:blog.languageDirection'&gt;&lt;data:label.name/&gt;&lt;/span&gt;
+          &lt;b:else/&gt;
+            &lt;a expr:dir='data:blog.languageDirection' expr:href='data:label.url'&gt;&lt;data:label.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:showFreqNumbers'&gt;
+            &lt;span class='label-count' dir='ltr'&gt;(&lt;data:label.count/&gt;)&lt;/span&gt;
+          &lt;/b:if&gt;
+        &lt;/span&gt;
+      &lt;/b:loop&gt;
+    &lt;/b:if&gt;
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+&lt;/div&gt;
+&lt;!--//end of .content-right--&gt;
+&lt;/div&gt;
+&lt;!--//end of #content--&gt;
+
+&lt;div class='clearfix' id='footer'&gt;
+&lt;div class='copyright'&gt;
+&lt;p&gt;Copyright 2011 &lt;a expr:href='data:blog.homepageUrl'&gt;&lt;data:blog.title/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class='credits'&gt;Powered by Blogger. Design by &lt;a href='http://javatemplates.com'&gt;Java Templates&lt;/a&gt; - &lt;a href='http://www.zoomtemplate.com'&gt;Zoomtemplate&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class='footer-right'&gt;
+&lt;a class='googlecheck' href='http://checkout.google.com/'&gt;Google&lt;/a&gt;
+&lt;a class='paypal' href='http://paypal.com'&gt;Paypal&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;script type='text/javascript'&gt;
+//&lt;![CDATA[
+jQuery(document).ready(function() {
+    jQuery('a.mycart').click(function() {
+        jQuery('.bag').slideToggle('medium');
+        return false;
+    });
+
+    /* Superfish */
+    jQuery('.nav').superfish({
+        delay: 200,
+        animation: {
+            opacity: 'show'
+        },
+        speed: 'fast',
+        autoArrows: true,
+        dropShadows: false
+    })
+    /* Superfish */
+    jQuery('ul#top-nav').superfish({
+        delay: 200,
+        animation: {
+            opacity: 'show'
+        },
+        speed: 'fast',
+        autoArrows: true,
+        dropShadows: false
+    })
+
+    /* Style View */
+    var $box = jQuery('.post'),
+    $grid = jQuery('a.grid_view');
+    $list = jQuery('a.list_view');
+    $list.click(function() {
+        $box.removeClass("grid");
+        jQuery(this).addClass('active');
+        $grid.removeClass('active');
+        jQuery.cookie('list_style', 0);
+        return false;
+    });
+    $grid.click(function() {
+        $box.addClass("grid");
+        jQuery(this).addClass('active');
+        $list.removeClass('active');
+        jQuery.cookie('list_style', 1);
+        return false;
+    });
+    if (jQuery.cookie('list_style') == 0) {
+        $box.removeClass("grid");
+        $list.addClass('active');
+    } else {
+        $box.addClass("grid");
+        $grid.addClass('active');
+    }
+
+    jQuery('#featured-product').carouFredSel({
+        curcular: false,
+        infinite: false,
+        auto: true,
+        prev: {
+            button: '#featured-product_prev',
+            key: 'left'
+        },
+        next: {
+            button: '#featured-product_next',
+            key: 'right'
+        },
+        pagination: '#featured-product_pag'
+    });
+
+jQuery('.footer-right a').hover(function(){
+            jQuery(this).stop().animate({
+                opacity: 1
+            }, 400);
+        }, function(){
+            jQuery(this).stop().animate({
+                opacity: 0.5
+            }, 400);
+        });
+});
+//end of ready function
+
+//]]&gt;
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/template/default'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/template/default'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-3406775805955702135</id><published>2011-09-30T12:47:00.000-07:00</published><updated>2011-09-30T13:19:09.695-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Featured'/><category scheme='http://www.blogger.com/atom/ns#' term='Shoes'/><title type='text'>Gentleman's Shoes</title><content type='html'>&lt;div class="item_image"&gt;&lt;img border="0" class="item_thumb" src="https://lh4.googleusercontent.com/-C2AoOT2QuvQ/ToYcwWmgsEI/AAAAAAAAADQ/qMW2T3xst8k/h1600/black-shoes.jpg" /&gt;&lt;br /&gt;&lt;span class="item_price"&gt;$00.00&lt;/span&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class="item_Description"&gt;Aliquam eleifend lacus ac tellus volutpat porttitor. Suspendisse imperdiet tortor ut tortor bibendum pulvinar. Nam est mi, accumsan sit amet vestibulum in, cursus vitae orci. Nunc varius adipiscing mi. Sit amet condimentum eros fermentum sed. Nulla feugiat metus metus. Ut varius diam eu velit pulvinar semper. Vivamus aliquam malesuada libero mollis varius. Pellentesque adipiscing odio eu neque gravida vehicula. Ut ultricies diam vel est convallis non auctor dui scelerisque. Quisque at erat sem, non vestibulum ligula. Maecenas neque arcu, porttitor nec rutrum faucibus, dapibus non lectus. &lt;br /&gt;&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4103122636629225580-3406775805955702135?l=blogger-store-v2.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://blogger-store-v2.blogspot.com/feeds/3406775805955702135/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/gentlemans-shoes.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/3406775805955702135'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/3406775805955702135'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/gentlemans-shoes.html' title='Gentleman&apos;s Shoes'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>templates.java@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-2932658712350162545</id><published>2011-09-30T12:44:00.000-07:00</published><updated>2011-09-30T12:44:34.497-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Gadget'/><category scheme='http://www.blogger.com/atom/ns#' term='Electronic'/><category scheme='http://www.blogger.com/atom/ns#' term='Featured'/><title type='text'>Canon Exilim</title><content type='html'>&lt;div class="item_image"&gt;&lt;img border="0" class="item_thumb" src="https://lh3.googleusercontent.com/--gilwFFYaNg/ToYbc91R9yI/AAAAAAAAADM/yV-fntJJkQY/h80/casio-exilim-zoom-ex-z150.jpg" /&gt;&lt;br /&gt;&lt;span class="item_price"&gt;$39.49&lt;/span&gt;&lt;/div&gt;&lt;div class="item_Description"&gt;Mauris sit amet orci arcu, nec imperdiet quam. Praesent luctus orci sit amet lectus accumsan id auctor purus rhoncus. In lorem dui, bibendum sit amet tempor vitae, tincidunt eu nulla. In aliquam neque eu enim fringilla ullamcorper. Praesent dapibus massa libero. Integer sed libero sem. Sed sit amet sapien eget lectus aliquam posuere nec eu nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ac nisi sit amet purus adipiscing varius. Cras aliquam elit nec metus viverra eget ultrices ante pellentesque.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4103122636629225580-2932658712350162545?l=blogger-store-v2.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://blogger-store-v2.blogspot.com/feeds/2932658712350162545/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/canon-exilim.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/2932658712350162545'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/2932658712350162545'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/canon-exilim.html' title='Canon Exilim'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>templates.java@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-4553006997387233348</id><published>2011-09-30T12:43:00.000-07:00</published><updated>2011-09-30T12:43:36.049-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Parfume'/><category scheme='http://www.blogger.com/atom/ns#' term='Featured'/><title type='text'>Armani Parfume</title><content type='html'>&lt;div class="item_image"&gt;&lt;img border="0" class="item_thumb" src="https://lh3.googleusercontent.com/-pHKs3IMaejI/ToYbb8jNMnI/AAAAAAAAADI/B46KL9xiQ9U/h80/armani-perfume.jpg" /&gt;&lt;br /&gt;&lt;span class="item_price"&gt;$88.00&lt;/span&gt;&lt;/div&gt;&lt;div class="item_Description"&gt;Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet non a nisl. Ut nec metus a mi ullamcorper hendrerit. Nulla facilisi. Pellentesque sed nibh a quam accumsan dignissim quis quis urna. Quisque imperdiet malesuada sapien id auctor. Sed pharetra, elit quis consectetur suscipit, arcu dui tincidunt nibh, ornare varius lectus nisi ut nulla. Proin a erat lacus. Maecenas bibendum erat nec nunc porttitor ut consequat lacus congue.&lt;br /&gt;&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4103122636629225580-4553006997387233348?l=blogger-store-v2.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://blogger-store-v2.blogspot.com/feeds/4553006997387233348/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/armani-parfume.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/4553006997387233348'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/4553006997387233348'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/armani-parfume.html' title='Armani Parfume'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>templates.java@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-6477301908744063131</id><published>2011-09-30T12:42:00.000-07:00</published><updated>2011-09-30T12:42:24.000-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Featured'/><category scheme='http://www.blogger.com/atom/ns#' term='Shoes'/><title type='text'>Wedding Shoes</title><content type='html'>&lt;div class="item_image"&gt;&lt;img border="0" class="item_thumb" src="https://lh5.googleusercontent.com/-vMyDfm7ZTSA/ToYbWJ5CLRI/AAAAAAAAADA/d3N_MpZUphs/h80/wedding-shoes.jpg" /&gt;&lt;br /&gt;&lt;span class="item_price"&gt;$65.29&lt;/span&gt;&lt;/div&gt;&lt;div class="item_Description"&gt;Nunc consectetur, magna dignissim adipiscing fringilla, nulla justo consectetur ipsum, eu fermentum ante velit in nisl. Pellentesque adipiscing sagittis nisl et molestie. Maecenas vel massa lorem. Praesent sit amet lacus dui, et dictum enim. Donec a ante nunc, lobortis commodo ipsum.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4103122636629225580-6477301908744063131?l=blogger-store-v2.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://blogger-store-v2.blogspot.com/feeds/6477301908744063131/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/wedding-shoes.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/6477301908744063131'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/6477301908744063131'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/wedding-shoes.html' title='Wedding Shoes'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>templates.java@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-1877117116504727895</id><published>2011-09-28T08:05:00.001-07:00</published><updated>2011-09-30T13:19:37.849-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Camera'/><category scheme='http://www.blogger.com/atom/ns#' term='Featured'/><title type='text'>Canon EOS 5D</title><content type='html'>&lt;div class="item_image"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/-a74E-6MSDQU/ToM3A5v_6sI/AAAAAAAAAAw/lfSR2A90r60/s1600/canon_eos_5d.jpg" class="item_thumb"/&gt;&lt;br /&gt;&lt;span class="item_price"&gt;$39.49&lt;/span&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class="item_Description"&gt;Pellentesque facilisis semper congue. Quisque vestibulum, sem eget fermentum mattis, libero mi volutpat mauris, sed ornare libero dolor eu enim. Integer mauris magna, feugiat id congue in, porta tempus est. Fusce iaculis urna viverra diam rhoncus molestie. Suspendisse consequat placerat tortor id eleifend. Ut a lectus a enim consequat vehicula. Nunc consectetur, magna dignissim adipiscing fringilla, nulla justo consectetur ipsum, eu fermentum ante velit in nisl. &lt;br /&gt;&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4103122636629225580-1877117116504727895?l=blogger-store-v2.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://blogger-store-v2.blogspot.com/feeds/1877117116504727895/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/canon-eos-5d.html#comment-form' title='3 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/1877117116504727895'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/1877117116504727895'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/canon-eos-5d.html' title='Canon EOS 5D'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>templates.java@gmail.com</email></author><media:thumbnail xmlns:media='http://search.yahoo.com/mrss/' url='http://3.bp.blogspot.com/-a74E-6MSDQU/ToM3A5v_6sI/AAAAAAAAAAw/lfSR2A90r60/s72-c/canon_eos_5d.jpg' height='72' width='72'/><thr:total>3</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-7581767615877434400</id><published>2011-09-28T08:04:00.001-07:00</published><updated>2011-09-30T12:31:48.798-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Phone'/><category scheme='http://www.blogger.com/atom/ns#' term='Featured'/><title type='text'>HTC Touch</title><content type='html'>&lt;div class="item_image"&gt;&lt;img border="0" class="item_thumb" src="http://3.bp.blogspot.com/-Yom9IsOY3H8/ToM3B9TaRwI/AAAAAAAAAA0/kHTh4wGOZ8s/s1600/htc_touch.jpg" /&gt;&lt;br /&gt;&lt;span class="item_price"&gt;$39.00&lt;/span&gt;&lt;/div&gt;&lt;div class="item_Description"&gt;Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet non a nisl. Ut nec metus a mi ullamcorper hendrerit. Nulla facilisi. Pellentesque sed nibh a quam accumsan dignissim quis quis urna. Quisque imperdiet malesuada sapien id auctor. Sed pharetra, elit quis consectetur suscipit, arcu dui tincidunt nibh, ornare varius lectus nisi ut nulla. Proin a erat lacus. Maecenas bibendum erat nec nunc porttitor ut consequat lacus congue&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4103122636629225580-7581767615877434400?l=blogger-store-v2.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://blogger-store-v2.blogspot.com/feeds/7581767615877434400/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/htc-touch.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/7581767615877434400'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/7581767615877434400'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/htc-touch.html' title='HTC Touch'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>templates.java@gmail.com</email></author><media:thumbnail xmlns:media='http://search.yahoo.com/mrss/' url='http://3.bp.blogspot.com/-Yom9IsOY3H8/ToM3B9TaRwI/AAAAAAAAAA0/kHTh4wGOZ8s/s72-c/htc_touch.jpg' height='72' width='72'/><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-7165085547606588758</id><published>2011-09-28T08:03:00.002-07:00</published><updated>2011-09-30T12:33:16.202-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Camera'/><category scheme='http://www.blogger.com/atom/ns#' term='Featured'/><title type='text'>Nikon D300</title><content type='html'>&lt;div class="item_image"&gt;&lt;img border="0" class="item_thumb" src="http://1.bp.blogspot.com/-Dip7ZxvmFvM/ToM3DxCkz8I/AAAAAAAAAA4/griIbF-6euc/s1600/nikon_d300.jpg" /&gt;&lt;br /&gt;&lt;span class="item_price"&gt;$39.49&lt;/span&gt;&lt;/div&gt;&lt;div class="item_Description"&gt;Nam semper lacus eu enim sagittis vitae malesuada libero molestie. Nunc orci risus, iaculis at aliquet vitae, hendrerit at est. Proin quis sapien nec eros tempor sodales. Curabitur et lacus sed orci rhoncus luctus. Mauris gravida eleifend est vel sodales. Vestibulum mattis pulvinar mi, faucibus rutrum dui ultrices non. Vestibulum sollicitudin lacus non nisl dignissim facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque facilisis semper congue. Quisque vestibulum, sem eget fermentum mattis, libero mi volutpat mauris, sed ornare libero dolor eu enim. Integer mauris magna, feugiat id congue in, porta tempus est. Fusce iaculis urna viverra diam rhoncus molestie. Suspendisse consequat placerat tortor id eleifend. Ut a lectus a enim consequat vehicula. Nunc consectetur, magna dignissim adipiscing fringilla, nulla justo consectetur ipsum, eu fermentum ante velit in nisl. Pellentesque adipiscing sagittis nisl et molestie. Maecenas vel massa lorem. Praesent sit amet lacus dui, et dictum enim. Donec a ante nunc, lobortis commodo ipsum.&lt;br /&gt;&lt;br /&gt;Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet non a nisl. Ut nec metus a mi ullamcorper hendrerit. Nulla facilisi. Pellentesque sed nibh a quam accumsan dignissim quis quis urna. Quisque imperdiet malesuada sapien id auctor. Sed pharetra, elit quis consectetur suscipit, arcu dui tincidunt nibh, ornare varius lectus nisi ut nulla. Proin a erat lacus. Maecenas bibendum erat nec nunc porttitor ut consequat lacus congue&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4103122636629225580-7165085547606588758?l=blogger-store-v2.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://blogger-store-v2.blogspot.com/feeds/7165085547606588758/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/nikon-d300.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/7165085547606588758'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/7165085547606588758'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/nikon-d300.html' title='Nikon D300'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>templates.java@gmail.com</email></author><media:thumbnail xmlns:media='http://search.yahoo.com/mrss/' url='http://1.bp.blogspot.com/-Dip7ZxvmFvM/ToM3DxCkz8I/AAAAAAAAAA4/griIbF-6euc/s72-c/nikon_d300.jpg' height='72' width='72'/><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-2648638835840170380</id><published>2011-09-28T07:59:00.000-07:00</published><updated>2011-09-30T12:29:32.793-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Gadget'/><category scheme='http://www.blogger.com/atom/ns#' term='Featured'/><title type='text'>Iphone Classic</title><content type='html'>&lt;div class="item_image"&gt;&lt;img border="0" src="http://4.bp.blogspot.com/-48O-CJlch7E/ToM2COUDDoI/AAAAAAAAAAs/XD7PfR8sm9M/s1600/iphone-classic.jpg" class="item_thumb"/&gt;&lt;br /&gt;&lt;span class="item_price"&gt;$45.99&lt;/span&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class="item_Description"&gt;Nam semper lacus eu enim sagittis vitae malesuada libero molestie. Nunc orci risus, iaculis at aliquet vitae, hendrerit at est. Proin quis sapien nec eros tempor sodales. Curabitur et lacus sed orci rhoncus luctus. Mauris gravida eleifend est vel sodales. Vestibulum mattis pulvinar mi, faucibus rutrum dui ultrices non. Vestibulum sollicitudin lacus non nisl dignissim facilisis.&lt;br /&gt;&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4103122636629225580-2648638835840170380?l=blogger-store-v2.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://blogger-store-v2.blogspot.com/feeds/2648638835840170380/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/iphone-classic.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/2648638835840170380'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/2648638835840170380'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/iphone-classic.html' title='Iphone Classic'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>templates.java@gmail.com</email></author><media:thumbnail xmlns:media='http://search.yahoo.com/mrss/' url='http://4.bp.blogspot.com/-48O-CJlch7E/ToM2COUDDoI/AAAAAAAAAAs/XD7PfR8sm9M/s72-c/iphone-classic.jpg' height='72' width='72'/><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-5393573217084400649</id><published>2011-09-28T07:55:00.000-07:00</published><updated>2011-09-30T12:29:10.168-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Electronic'/><category scheme='http://www.blogger.com/atom/ns#' term='Featured'/><title type='text'>LCD Flat</title><content type='html'>&lt;div class="item_image"&gt;&lt;img border="0" src="http://2.bp.blogspot.com/-MYQkpTOlX6o/ToM07ECzgZI/AAAAAAAAAAo/b9WxcS6_Ovc/s1600/HP-flat-lcd.jpg" class="item_thumb" /&gt;&lt;br /&gt;&lt;span class="item_price"&gt;$75.00&lt;/span&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class="item_Description"&gt;Sed egestas fringilla turpis at ullamcorper. Pellentesque adipiscing ornare cursus. Aliquam a nulla sapien. Sed facilisis ultricies purus, sed dapibus eros auctor vel. Phasellus et est nibh. Sed sagittis neque vel magna euismod ut vulputate sapien tempus. Fusce feugiat condimentum nulla. Aliquam quis convallis nunc. Nulla eu eros quam. Heading H1Suspendisse elementum tincidunt mi, non dictum nibh molestie a. In placerat rutrum felis, eu lacinia nunc eleifend vitae.&lt;br /&gt;&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4103122636629225580-5393573217084400649?l=blogger-store-v2.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://blogger-store-v2.blogspot.com/feeds/5393573217084400649/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/lcd-flat.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/5393573217084400649'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/5393573217084400649'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/lcd-flat.html' title='LCD Flat'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>templates.java@gmail.com</email></author><media:thumbnail xmlns:media='http://search.yahoo.com/mrss/' url='http://2.bp.blogspot.com/-MYQkpTOlX6o/ToM07ECzgZI/AAAAAAAAAAo/b9WxcS6_Ovc/s72-c/HP-flat-lcd.jpg' height='72' width='72'/><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-6256729263267519545</id><published>2011-09-28T06:03:00.000-07:00</published><updated>2011-09-30T12:28:56.091-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Computers'/><category scheme='http://www.blogger.com/atom/ns#' term='Featured'/><title type='text'>Sony Vaio</title><content type='html'>&lt;div class="item_image"&gt;&lt;img border="0" class="item_thumb" src="http://4.bp.blogspot.com/-GY2hiKQB2a0/ToMRI3AP07I/AAAAAAAAAAk/mBeVBDHE3W8/s1600/sonny_vaio.jpg" /&gt;&lt;br /&gt;&lt;span class="item_price"&gt;$89.99&lt;/span&gt;&lt;/div&gt;&lt;div class="item_Description"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id libero non erat fermentum varius eget at elit. Suspendisse vel mattis diam. Ut sed dui in lectus hendrerit interdum nec ac neque. Praesent a metus eget augue lacinia accumsan ullamcorper sit amet tellus. Duis cursus egestas hendrerit. Fusce luctus risus id elit malesuada ac sagittis magna tempus.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4103122636629225580-6256729263267519545?l=blogger-store-v2.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://blogger-store-v2.blogspot.com/feeds/6256729263267519545/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/sony-vaio.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/6256729263267519545'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/posts/default/6256729263267519545'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/sony-vaio.html' title='Sony Vaio'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>templates.java@gmail.com</email></author><media:thumbnail xmlns:media='http://search.yahoo.com/mrss/' url='http://4.bp.blogspot.com/-GY2hiKQB2a0/ToMRI3AP07I/AAAAAAAAAAk/mBeVBDHE3W8/s72-c/sonny_vaio.jpg' height='72' width='72'/><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.page-6761845588426049030</id><published>2011-09-29T16:02:00.000-07:00</published><updated>2011-09-29T16:04:31.270-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#page'/><title type='text'>Sample Page</title><content type='html'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id libero non erat fermentum varius eget at elit. Suspendisse vel mattis diam. Ut sed dui in lectus hendrerit interdum nec ac neque. Praesent a metus eget augue lacinia accumsan ullamcorper sit amet tellus. Duis cursus egestas hendrerit. Fusce luctus risus id elit malesuada ac sagittis magna tempus. Sed egestas fringilla turpis at ullamcorper. Pellentesque adipiscing ornare cursus. Aliquam a nulla sapien. Sed facilisis ultricies purus, sed dapibus eros auctor vel. Phasellus et est nibh. Sed sagittis neque vel magna euismod ut vulputate sapien tempus. Fusce feugiat condimentum nulla. Aliquam quis convallis nunc. Nulla eu eros quam. Heading H1Suspendisse elementum tincidunt mi, non dictum nibh molestie a. In placerat rutrum felis, eu lacinia nunc eleifend vitae.&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4103122636629225580-6761845588426049030?l=blogger-store-v2.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/pages/default/6761845588426049030'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/pages/default/6761845588426049030'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/p/sample-page.html' title='Sample Page'/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>templates.java@gmail.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-5612293839505366831</id><published>2011-09-29T17:44:47.028-07:00</published><updated>2011-09-29T17:44:47.028-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Lorem ipsum dolor sit amet, consectetur adipiscing...</title><content type='html'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id libero non erat fermentum varius eget at elit. Suspendisse vel mattis diam. Ut sed dui in lectus hendrerit interdum nec ac neque. Praesent a metus eget augue lacinia accumsan ullamcorper sit amet tellus. Duis cursus egestas hendrerit. Fusce luctus risus id elit malesuada ac sagittis magna tempus. Sed egestas fringilla turpis at ullamcorper.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/1877117116504727895/comments/default/5612293839505366831'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/1877117116504727895/comments/default/5612293839505366831'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/canon-eos-5d.html?showComment=1317343487028#c5612293839505366831' title=''/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://blogger-store-v2.blogspot.com/2011/09/canon-eos-5d.html' ref='tag:blogger.com,1999:blog-4103122636629225580.post-1877117116504727895' source='http://www.blogger.com/feeds/4103122636629225580/posts/default/1877117116504727895' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-7768879651047478104</id><published>2011-09-29T17:04:45.421-07:00</published><updated>2011-09-29T17:04:45.421-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Test Comments Again .... !</title><content type='html'>Test Comments Again .... !</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/1877117116504727895/comments/default/7768879651047478104'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/1877117116504727895/comments/default/7768879651047478104'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/canon-eos-5d.html?showComment=1317341085421#c7768879651047478104' title=''/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://blogger-store-v2.blogspot.com/2011/09/canon-eos-5d.html' ref='tag:blogger.com,1999:blog-4103122636629225580.post-1877117116504727895' source='http://www.blogger.com/feeds/4103122636629225580/posts/default/1877117116504727895' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4103122636629225580.post-8518518657002624569</id><published>2011-09-29T17:00:41.286-07:00</published><updated>2011-09-29T17:00:41.286-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Test Comments</title><content type='html'>Test Comments</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/1877117116504727895/comments/default/8518518657002624569'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4103122636629225580/1877117116504727895/comments/default/8518518657002624569'/><link rel='alternate' type='text/html' href='http://blogger-store-v2.blogspot.com/2011/09/canon-eos-5d.html?showComment=1317340841286#c8518518657002624569' title=''/><author><name>Java</name><uri>http://www.blogger.com/profile/02985118982981176686</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://blogger-store-v2.blogspot.com/2011/09/canon-eos-5d.html' ref='tag:blogger.com,1999:blog-4103122636629225580.post-1877117116504727895' source='http://www.blogger.com/feeds/4103122636629225580/posts/default/1877117116504727895' type='text/html'/></entry></feed>
